@@ -41,7 +41,7 @@ class CSVTimeSeriesFile:
             # Faccio lo split di ogni linea sulla virgola
             elements = line.split(',')
 
-            if elements[0] != 'epoch':
+            if elements[0] is not int or float:
                 #metto try così se c'è una riga incompleta o nulla la salto e leggo quella successiva
                 try:
                     # Setto la data ed il valore
