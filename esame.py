@@ -187,6 +187,4 @@ def daily_stats(time_series):
 
     return valori_giornate
 
-
-
 #y = daily_stats(time_series)
